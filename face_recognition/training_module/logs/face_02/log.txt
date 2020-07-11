@@ -1,0 +1,26 @@
+backbone: None
+image_size: 112
+embedding_size: 512
+optimizer: ADAM
+learning_rate: 0.0001
+loss_type: logit
+loss_func: arcface
+logits_scale: 64.0
+logits_margin1: 1.0
+logits_margin2: 0.0
+logits_margin3: 0.1
+center_loss_factor: 0.0
+center_alpha: 0.9
+alpha: 0.2
+batch_size: 64
+epoch_num: 100
+valid_num: 256
+valid_batch_size: 16
+thresh: 0.2
+below_fpr: 0.001
+train_dir: D:\Datasets\face\arcface
+valid_dir: D:\Datasets\face\faces_ms1m-refine-v2_112x112\faces_emore\lfw.bin
+test_dir: None
+ckpt_dir: D:\models\tf-face-pretrained\face_02
+summary_dir: logs/face_02
+

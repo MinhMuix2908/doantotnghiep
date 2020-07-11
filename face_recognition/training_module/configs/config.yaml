@@ -1,0 +1,40 @@
+# model params
+backbone:
+
+image_size: 112
+embedding_size: 512
+
+
+
+# hyper params
+optimizer: 'ADAM'    # ADADELTA, ADAGRAD, ADAM, ADAMAX, FTRL, NADAM, RMSPROP, SGD
+learning_rate: 0.0001
+
+loss_type: 'logit'   # logit or triplet
+loss_func: 'arcface' # softmax or arcface
+logits_scale: 64.0
+logits_margin1: 1.0   # m1: sphereface should >= 1
+logits_margin2: 0.0   # m2: cosineface should >= 0
+logits_margin3: 0.1   # m3: arcface    should >= 0
+
+center_loss_factor: 0.0  # center loss
+center_alpha: 0.9   # center update rate
+
+alpha: 0.2     # triplet margin
+
+# run params
+
+batch_size: 64
+epoch_num: 100
+
+valid_num: 256          # half pos and half neg
+valid_batch_size: 16
+thresh: 0.2
+below_fpr: 0.001        # fpr should below this
+# paths
+
+train_dir: '/media/minhbq/Workspace/Datasets/face/arcface'
+valid_dir: '/media/minhbq/Workspace/Datasets/face/faces_ms1m-refine-v2_112x112/faces_emore/lfw.bin'
+test_dir:
+ckpt_dir: '/media/minhbq/Workspace/models/tf-face-pretrained/face_02'
+summary_dir: 'logs/face_01'
