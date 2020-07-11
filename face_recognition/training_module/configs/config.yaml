@@ -33,8 +33,8 @@ thresh: 0.2
 below_fpr: 0.001        # fpr should below this
 # paths
 
-train_dir: '/media/minhbq/Workspace/Datasets/face/arcface'
-valid_dir: '/media/minhbq/Workspace/Datasets/face/faces_ms1m-refine-v2_112x112/faces_emore/lfw.bin'
+train_dir: '/media/minhdq/Workspace/Datasets/face/arcface'
+valid_dir: '/media/minhdq/Workspace/Datasets/face/faces_ms1m-refine-v2_112x112/faces_emore/lfw.bin'
 test_dir:
-ckpt_dir: '/media/minhbq/Workspace/models/tf-face-pretrained/face_02'
+ckpt_dir: '/media/minhdq/Workspace/models/tf-face-pretrained/face_02'
 summary_dir: 'logs/face_01'

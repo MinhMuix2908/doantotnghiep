@@ -10,7 +10,7 @@ detector = FaceDetector(opt.face_detector.model_path, -1)
 
 
 
-image = cv2.imread('/home/minhbq/Desktop/people-14.jpg')
+image = cv2.imread('/home/minhdq/Desktop/people-14.jpg')
 # image = image[:, :, ::-1]
 print(image.shape)
 bboxes, points = detector.detect(image, 0.2)

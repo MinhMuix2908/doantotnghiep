@@ -1,6 +1,6 @@
 image_size: 112
 embedding_size: 512
-checkpoint: /hdd/Minhbq/insightface/recognition/checkpoints/face_reg-02/mymodel-84
+checkpoint: /hdd/minhdq/insightface/recognition/checkpoints/face_reg-02/mymodel-84
 database: database.pickle
 filenames: filename.pickle
 threshold: 0.4
